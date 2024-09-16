@@ -1,0 +1,922 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    max-width: 1440px;
+    margin: 30px auto 0px auto;
+    overflow-x: hidden;
+}
+
+/* <!----------------------------Page Start----------------------------> */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ffffff;
+    padding: 0px 30px;
+}
+
+.web-logo {
+    width: 90px;
+    padding-top: 15px;
+}
+
+.navigation-links-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation-links {
+    display: inline-flex;
+    padding: 10px 20px 0px 20px;
+    margin: -2px 0px 0px 0px;
+    height: 100%;
+    color: #000000;  
+    font-size: 15px;
+    border-top: solid 2px #ffffff;
+}
+
+.navigation-links:hover {
+    border-top: solid 2px #0065FC;
+    margin-top: -32px;
+    padding-top: 40px;
+    border-bottom: none;
+    color: #0065FC;
+}
+
+/* <!---------------------------Page Filter----------------------------> */
+.filter-section {
+    font-size: 14px;
+    padding: 0px 30px;
+}
+
+.text-container-1 h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.text-container-1 p {
+    margin-top: 7px;
+}
+
+.search-bar-container {
+    margin: 10px 0px;
+}
+
+.search-bar {
+    display: inline-block;
+    height: 45px;
+    width: 345px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-width: 1.5px;
+}
+
+input.textbox {
+    height: 100%;
+}
+
+.search-bar-icon {
+    height: 100%;
+    width: 13%;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    color: #000000;
+    position: relative;
+    top: -21px;
+}
+
+.search-bar-icon::before {
+    position: relative;
+    top: 19px;
+    left: 16px;
+}
+
+.search-bar .textbox {
+    border: none;
+    height: 100%;
+    width: 61%;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+}
+ 
+.search-bar button {
+    height: 100%;
+    width: 23.9%;
+    background-color: #0065FC;
+    border-style: solid;
+    font-weight: 800;
+    font-size: 15px;
+    border: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
+.search-bar button span {
+    color: white;
+    margin: 0px;
+}
+
+.search-button-icon {
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+}
+
+.search-bar input {
+    outline-color: transparent !important;
+}
+
+#Family-friendly i {
+    margin-right: 4px;
+    padding-left: 12px;
+    padding-right: 15px;
+}
+
+#Family-friendly i::before {
+    position: relative;
+    right: -1.5px;
+}
+
+.filter-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+}
+
+.filters-text {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.filter-icon {
+    border-radius: 60px;
+    border-style: solid;
+    border-color: #DEEBFF;
+    padding: 11px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    margin: -1px 5px -1px -1px;
+}
+
+.filter-category {
+    padding-right: 15px;
+    border-radius: 60px;
+    border-style: solid;
+    border-width: 1.8px;
+    border-color: #0000002d;
+    border-left: #DEEBFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 5px;
+    -webkit-transition: .5s;
+}
+
+.filter-category:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
+    -webkit-transition: .5s;
+}
+
+.text-container-2 {
+    display: flex;
+    max-width: 400px;
+    text-wrap: wrap;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.info-icon {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 8.5px;
+    height: 10%;
+    border-color: #b6b6b6;
+    color: #0065FC;
+    position: relative;
+    top: 15px;
+    margin: 0px 10px;
+}
+
+/* <!---------------------------Center Page----------------------------> */
+main {
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    column-gap: 3%;
+}
+
+.accommodations {
+    padding: 10px;
+    width: 70%;
+    max-width: 1000px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accommodations h2 {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px;
+    margin: 20px 20px 0px 20px;
+}
+
+.accommodations-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+    min-width: 450px;
+    row-gap: 30px; 
+}
+
+.accommodation-image-container {
+    background-color: white;
+    width: 30%;
+    min-width: 190px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.accommodation-image-container:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.accommodation-image-container img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.accommodation-image-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.accommodation-image-container h4 {
+    font-size: 15px;
+    font-weight: 800;
+    margin:  0px 12px 0px;
+}
+
+.accommodation-image-container p {
+    font-size: 14px;
+    margin: 5px 10px 5px 12px;
+}
+
+.show-more {
+    margin: 10px 20px 20px 20px;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.accommodation-rank {
+    display: flex;
+    margin: 5px 10px 15px 12px;
+}
+
+.blank-star {
+    color: #d7d7d7;
+}
+
+.checked-star {
+    color: #0065FC;
+}
+
+/* <!------------Most Popular-------------> */
+.most-popular {
+    padding: 10px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.most-popular-container {
+    display: flex;
+    min-width: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 85%;
+}
+
+.most-popular-text-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 0px;
+    align-items: center;
+}
+
+.most-popular h2 {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.popular-icon {
+    color: #000000;
+}
+
+.most-popular-image-container {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.most-popular-image-container:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.most-popular-image-container img {
+    max-width: 130px;
+    width: 39%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.most-popular-image-text {
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.most-popular-image-container h4 {
+    font-size: 15px;
+    max-width: 170px;
+    font-weight: 800;
+    margin: 0px 10px 0px;
+}
+
+.most-popular-image-container p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.most-popular-rank {
+    display: flex;
+    margin: 5px 10px 5px 10px;
+}
+
+/* <!---------------------------Lower Page-----------------------------> */
+.activities {
+    background-color: rgb(254, 254, 254);
+    padding: 10px 30px;
+}
+
+.activities h2 {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.activities-columns {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    max-width: 1440px;
+}
+
+.activity-column-1-3 {
+    width: 23%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.activity-column-1-3:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.activity-column-1-3 img {
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activity-column-2-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    border-radius: 20px;
+}
+
+#Pomègues-Fort {
+    height: 56%;
+}
+
+#Pomègues-Fort img {
+    height: 80%;
+}
+
+#Frioul-Island {
+    height: 33%;
+}
+
+#Frioul-Island img {
+    height: 70%;
+}
+
+#Calanques-National-Park h4 {
+    padding-top: 5px;
+}
+
+#Notre-Dame-de-la-Garde {
+    height: 40%;
+}
+
+#Notre-Dame-de-la-Garde h4 {
+    padding-top: 2.5px;
+    padding-bottom: 0px;
+}
+
+#Longchamp-Park {
+    height: 50%;
+}
+
+.activity-image-container {
+    border-radius: 20px;
+    margin: 5px;
+    padding-bottom: 5px;
+    height: 46%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.activity-image-container:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.activity-image-container img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activities-columns h4 {
+    padding: 10px 12px;
+    margin: 2px;
+}
+
+/* <!----------------------------Page End------------------------------> */
+footer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 230px;
+    align-items: flex-start;
+    background-color: #F2F2F2;
+    margin: 40px 0px 0px 0px;
+    padding: 25px 35px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+
+.footer-column {
+    flex: 1;
+}
+
+footer h2 {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+footer li {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.fake-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+  /* <!----------------------------------------------------------------------> */
+  /* <!----------------------------Window Sizes------------------------------> */
+  /* <!----------------------------------------------------------------------> */
+
+  @media all and (max-width: 992px) and (min-width: 768.1px) {
+    /* <!----Lower Page----> */
+    .activities-columns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        row-gap: 25px;
+    }
+
+    .activity-column-1-3 {
+        width: 100%;
+        height: 180px;
+        row-gap: 25px;
+    }
+
+    .activity-column-1-3 img {
+        height: 72%;
+    }
+
+    .activity-column-2-4 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    #Pomègues-Fort.activity-image-container {
+        width: 48%;
+        height: 180px;
+        margin: 0px;
+    }
+
+    #Frioul-Island.activity-image-container {
+        width: 48%;
+        height: 180px;
+        margin: 0px;
+    }
+
+    #Frioul-Island.activity-image-container img {
+        height: 72%;
+    }
+
+    #Notre-Dame-de-la-Garde.activity-image-container {
+        width: 48%;
+        height: 180px;
+        margin: 0px;
+    }
+
+    #Notre-Dame-de-la-Garde.activity-image-container img {
+        height: 72%;
+    }
+
+    #Notre-Dame-de-la-Garde h4 {
+        padding-top: 10px;
+    }
+
+    #Longchamp-Park.activity-image-container {
+        width: 48%;
+        height: 180px;
+        margin: 0px;
+    }
+
+    #Longchamp-Park.activity-image-container img {
+        height: 72%;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+
+    body {
+        font-family: "Raleway", sans-serif;
+        margin: 5px;
+    }
+
+    /* <!----Page Start----> */
+
+    nav {
+        display: block;
+        border-bottom: 2px solid #F2F2F2;
+        border-top: none;
+        margin: 0px -5px;
+        padding: 0px;
+    }
+
+    .web-logo-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .web-logo {
+        display: flex;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        width: 30%;
+        height: auto;
+    }
+
+    .navigation-links-container {
+        background-color: rgb(255, 255, 255);
+        padding: 0px;
+        display: flex;
+    }
+
+    .navigation-links {
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+    }
+    
+    .navigation-links:hover {
+        border-top: none;
+        margin-top: 2px;
+        margin-bottom: -2px;
+        padding-top: 10px;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+
+    /* <!----Page Filter----> */
+
+    .text-container-1 {
+        align-items: center;
+    }
+
+    .text-container-1 h2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .text-container-1 p {
+        margin-top: 7px;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .search-bar-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-bar {
+        display: inline-flex;
+        width: 90%;
+        height: 42.71px;
+        justify-content: space-between;
+    }
+
+    .search-bar button {
+        color: #0065FC;
+        width: 42px;
+        border-radius: 15px;
+        position: relative;
+        top: 0px;
+    }
+
+    .search-bar button span {
+        visibility: hidden;
+        position: relative;
+        top: 0px;
+    }
+    
+    .search-bar-icon {
+        width: 42.33px;
+        position: relative;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .search-bar-icon::before {
+        position: relative;
+        left: 15px;
+        top: 19px;
+    }
+
+    .search-button-icon {
+        opacity: 1;
+        color: white;
+    }
+
+    .search-button-icon::before {
+        position: relative;
+        left: 6.5px;
+        top: -17px;
+    }
+
+    .filter-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .filter-container {
+        margin: 5px 0px;
+    }
+
+    .filters-text {
+        width: 100%;
+        font-weight: 800;
+        padding-left: 8px;
+    }
+
+    #LowCost {
+        order: 1;
+    }
+
+    #Family-friendly {
+        order: 3;
+    }
+
+    #Romantic {
+        order: 2;
+    }
+
+    #Petsallowed {
+        order: 4;
+        width: 205px;
+    }
+
+    .text-container-2 {
+        margin-left: 0px;
+    }
+
+    .text-container-2 p {
+        max-width: 240px;
+    }
+
+    /* <!----Center Page----> */
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .most-popular {
+        border-radius: 0px;
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+
+    .most-popular-text-container {
+        margin: 0px;
+        width: 98%;
+    }
+
+    .most-popular-container {
+        padding: 0px;
+        row-gap: 10px;
+        height: 100%;
+        align-items: center;
+    }
+
+    .most-popular-image-container {
+        height: 140px;
+        width: 97%;
+    }
+
+    .most-popular-image-container img {
+        width: 39%;
+        height: 100%;
+    }
+
+    #Au-Cœur-de-lEau h4{
+        max-width: 150px;
+    }
+
+    .accommodations {
+        order: 2;
+        padding: 0px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .accommodations h2 {
+        margin: 20px 0px 0px 0px;
+        padding-left: 15px;
+    }
+
+    .accommodations-container {
+        min-width: 100%;
+        padding: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .accommodation-image-container {
+        text-decoration: none;
+        width: 100%;
+    }
+    
+    .most-popular {
+        width: 100%;        
+    }
+
+    /* <!----Lower Page----> */
+    .activities {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .activities-columns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        row-gap: 25px;
+    }
+
+    .activity-column-1-3 {
+        width: 100%;
+        height: 180px;
+        row-gap: 25px;
+    }
+
+    .activity-column-1-3 img {
+        height: 72%;
+    }
+
+    .activity-column-2-4 {
+        width: 100%;
+        height: 375px;
+        row-gap: 25px;
+        justify-content: space-around;
+    }
+
+    #Pomègues-Fort.activity-image-container {
+        width: 100%;
+        height: 180px;
+        margin: 0px;
+    }
+
+    #Frioul-Island.activity-image-container {
+        width: 100%;
+        height: 180px;
+        margin: 0px;
+    }
+
+    #Frioul-Island.activity-image-container img {
+        height: 72%;
+    }
+
+    #Notre-Dame-de-la-Garde.activity-image-container {
+        width: 100%;
+        height: 180px;
+        margin: 0px;
+    }
+
+    #Notre-Dame-de-la-Garde.activity-image-container img {
+        height: 72%;
+    }
+
+    #Notre-Dame-de-la-Garde h4 {
+        padding-top: 10px;
+    }
+
+    #Longchamp-Park.activity-image-container {
+        width: 100%;
+        height: 180px;
+        margin: 0px;
+    }
+
+    #Longchamp-Park.activity-image-container img {
+        height: 72%;
+    }
+
+    /* <!----Page End----> */
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 55px;
+        margin: 20px -30px 0px;
+    }
+
+    footer h2 {
+        font-size: 17px;
+    }
+
+  }
+  
